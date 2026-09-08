@@ -26,7 +26,12 @@ cancer (NSCLC)?
 - **Study types:** Clinical studies preferred (cohort studies, clinical
   trials, retrospective/prospective analyses); mechanistic/basic studies on
   resistance mechanisms may be included if directly tied to clinical
-  outcome data.
+  outcome data. **Narrative reviews are excluded as evidence** — they may
+  be consulted informally for orientation but must not be recorded as
+  source records, entered in the evidence table, or cited as support for
+  any claim in the final report. Systematic reviews/meta-analyses with a
+  stated search methodology are treated as primary evidence for this
+  purpose and are not excluded by this rule.
 - **Date range:** 2022–2026.
 - **Language:** English.
 
@@ -46,6 +51,9 @@ cancer (NSCLC)?
 - Studies not reporting subtype-level (only pooled "EGFR-mutant") data.
 - Preprints, conference abstracts without full text, or non-peer-reviewed
   sources.
+- Narrative reviews (non-systematic literature reviews without a stated
+  search methodology) — excluded as evidence regardless of topical
+  relevance.
 
 ## Notes
 

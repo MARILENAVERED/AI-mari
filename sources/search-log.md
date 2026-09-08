@@ -51,3 +51,15 @@ Append-only log of every search run performed by `literature-scout`. Never edit 
 - Unique PMIDs verified via `get_article_metadata` against PubMed's authoritative record: 24
 - Passed forward to evidence-reviewer (Verified/Partial, on-scope): 12
 - Excluded at intake (with reasons recorded in each record file): 12
+
+## Post-hoc scope correction — 2026-09-08
+
+`research-question.md` was updated to explicitly exclude narrative reviews
+(non-systematic, no stated search methodology) as evidence, resolving an
+ambiguity evidence-reviewer had flagged. Three previously-forwarded
+records — PMID-38382773 (Ferro et al.), PMID-41967619 (Spitaleri et al.),
+PMID-42512396 (Zullo & Remon) — are narrative reviews and are reclassified
+from "Pass forward to evidence-reviewer" to "Excluded at intake" per this
+updated criterion. Their underlying bibliographic verification is
+unaffected (still Verified) — only their evidentiary disposition changes.
+Passed forward to evidence-reviewer after this correction: 9.
