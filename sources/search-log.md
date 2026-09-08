@@ -62,4 +62,13 @@ PMID-42512396 (Zullo & Remon) — are narrative reviews and are reclassified
 from "Pass forward to evidence-reviewer" to "Excluded at intake" per this
 updated criterion. Their underlying bibliographic verification is
 unaffected (still Verified) — only their evidentiary disposition changes.
-Passed forward to evidence-reviewer after this correction: 9.
+
+Records with disposition "Pass forward to evidence-reviewer" after this
+correction: 9 (12 originally forwarded, minus the 3 reclassified reviews).
+Of those 9, PMID-42453333 (Jing et al.) had already been excluded by
+evidence-reviewer in its first screening pass (co-mutation-focused, not
+EGFR-subtype-stratified) — its own source-record disposition line was
+never updated at the time, which was corrected on 2026-09-08 for
+bookkeeping accuracy. Net records actually eligible for evidence
+extraction after both corrections: 8 — matching the 8 rows in
+`outputs/evidence-table.md`.
