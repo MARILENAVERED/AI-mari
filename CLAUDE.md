@@ -7,6 +7,20 @@ gates, anti-fabrication enforcement, and stop/escalation decisions.**
 
 There is no `research-manager` subagent. This file is the orchestrator.
 
+## Tooling notes
+
+`literature-scout` verifies bibliographic metadata primarily via the
+`mcp__PubMed__*` tools (search, metadata lookup, citation lookup, ID
+conversion) when available — this does not depend on general WebFetch and
+works even when this environment's network egress proxy blocks direct
+fetches to pubmed.ncbi.nlm.nih.gov, openalex.org, and publisher domains
+(a restriction observed and documented during initial testing). WebFetch/
+WebSearch remain fallbacks for candidates outside PubMed's scope or for
+independent cross-verification. If neither the PubMed MCP tools nor any
+WebFetch path can reach a primary source, that is still the stop condition
+below ("verification cannot be technically performed"), not something to
+route around.
+
 ## Project layout
 
 ```

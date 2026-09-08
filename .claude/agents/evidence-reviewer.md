@@ -1,7 +1,7 @@
 ---
 name: evidence-reviewer
 description: Screens candidate source records against research-question.md's inclusion/exclusion criteria, extracts structured evidence from included studies, appraises study design/quality/bias, and populates outputs/evidence-table.md. Does not discover new papers or write narrative synthesis.
-tools: Read, Write, Edit, Glob, Grep
+tools: mcp__PubMed__get_article_metadata, mcp__PubMed__get_full_text_article, mcp__PubMed__convert_article_ids, mcp__PubMed__get_copyright_status, Read, Write, Edit, Glob, Grep
 ---
 
 # evidence-reviewer
@@ -37,6 +37,13 @@ For each candidate record:
    or an "Excluded" section in `outputs/evidence-table.md` — pick one
    convention per project and use it consistently) so screening is
    reproducible and auditable.
+
+You may use `mcp__PubMed__get_article_metadata`, `get_full_text_article`,
+`convert_article_ids`, and `get_copyright_status` to pull the confirmed
+metadata/full text for a PMID a source record already references — this is
+reading detail on an already-verified candidate, not new discovery, so it's
+in scope. You may not use these to go find and add papers `literature-scout`
+never surfaced.
 
 ## Evidence extraction (included studies only)
 
